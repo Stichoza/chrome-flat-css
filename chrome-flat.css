@@ -1,0 +1,100 @@
+body {
+    padding: 25px 15px;
+}
+.chrome-flat {
+    background: #ecf0f1;
+    padding: 30px 2px 2px 2px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px 4px 2px 2px;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.05),
+                inset 0 0 8px rgba(0, 0, 0, 0.02)
+}
+.chrome-flat > div {
+    background: #fff;
+    border-radius: 2px 2px 1px 1px;
+    overflow: auto;
+}
+.chrome-flat > div::before,
+.chrome-flat > div::after,
+.chrome-flat::before {
+    display: block;
+    position: absolute;
+    content:" ";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+}
+.chrome-flat > div::before {
+    top: 10px;
+    left: 10px;
+    background: #e74c3c;
+}
+.chrome-flat > div::after {
+    top: 10px;
+    left: 25px;
+    background: #f1c40f;
+}
+.chrome-flat::before {
+    top: 10px;
+    left: 40px;
+    background: #2ecc71;
+}
+.chrome-flat > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    margin-left: 64px;
+    width: 100%;
+}
+.chrome-flat > ul > li {
+    display: block;
+    position: relative;
+    width: 17%;
+    max-width: 128px;
+    float: left;
+}
+.chrome-flat > ul > li > a {
+    display: block;
+    width: 108%;
+    height: 24px;
+    background-color: #bdc3c7;
+    opacity: 0.8;
+    border-radius: 16px/36px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #eee;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 6px 0 0 28px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.chrome-flat > ul > li > a:before {
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 12px;
+    content:' ';
+    background: #eee;
+    width: 12px;
+    height: 16px;
+    border-top-right-radius: 6px;
+}
+.chrome-flat > ul > li > a:hover {
+    opacity: 1;
+}
+.chrome-flat > ul > li.pinned {
+    width: 32px;
+}
+.chrome-flat > ul > li.pinned > a {
+    text-indent: -9999px;
+}
