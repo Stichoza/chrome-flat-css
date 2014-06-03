@@ -23,3 +23,8 @@ Chrome flat window in plain CSS
  
 ![Imgur](http://i.imgur.com/UInmFw5.png)
 
+
+#### Live Examples
+
+ - [jsfiddle](http://jsfiddle.net/stichoza/Am6U5/)
+ - [Stichoza.com](https://stichoza.com) (in portfolio project preview)
