@@ -1,7 +1,7 @@
 Chrome Flat CSS
 ===============
 
-Chrome flat window in plain CSS
+Chrome flat window in plain CSS (**No images, No JavaScript**)
 
 ### Example usage
 
